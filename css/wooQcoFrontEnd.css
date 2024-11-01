@@ -1,0 +1,83 @@
+#WooQcoForm label {
+
+	padding: 5px 5px 5px 2px;
+	font-size: 1em;
+	font-weight:bold;
+	text-transform: none;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+#WooQcoForm select {
+	line-height: 1.1;
+	font-size: .9em;
+	padding: 5px 10px;
+	color: #000;
+	display: block;
+	width:100%;
+	max-width:480px;
+	background: transparent;
+	margin-top:4px;
+	margin-bottom:8px;
+}
+.WooQcoFormsubmit,.WooQcoaddtoCart {
+	background: #10689a ;
+	border: none ;
+	color: #fff ;
+	width: auto ;
+	cursor: pointer ;
+	margin-top:15px ;
+	margin-bottom:15px ;
+	padding:10px;
+}
+.WooQcoaddtoCart{
+	margin-left:20px !important;
+}
+#WooQcoProducts img{
+	max-width:80px;
+	height:auto;
+	padding:5px;
+	border:solid 1px #eee;
+
+}
+#WooQcoProducts table{
+	min-width:50%;
+}
+#WooQcoProducts table td{
+	font-size:.9em;
+}
+
+  @media screen and (max-width: 600px) {
+#WooQcoProducts table {
+      border:none;
+    }
+
+#WooQcoProducts table thead {
+      display: none;
+    }
+
+#WooQcoProducts table tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 1px solid #eee;
+    }
+
+#WooQcoProducts table td {
+      display: block;
+      text-align: right;
+      font-size: 14px;
+	   border:none !important;
+     
+    }
+
+#WooQcoProducts table td:last-child {
+      border-bottom: 0;
+    }
+
+#WooQcoProducts table td:before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+  }

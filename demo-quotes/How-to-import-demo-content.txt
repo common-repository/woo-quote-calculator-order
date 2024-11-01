@@ -1,0 +1,7 @@
+step 1 : Go to wordpress admin dashboard
+step 2 : click "import" under "Woo Quotes" menu
+step 3 : select this file 'demo-quotes.csv' using file uploader
+step 4 : click on the import button
+step 5 : click on the "Woo Quotes" menu to see the imported quotes
+
+* NOTE * Make sure to update products and formula  to make the quotes work 

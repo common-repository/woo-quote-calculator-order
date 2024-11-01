@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Woo Quote Calculator & Order : Documentation</title>
+
+		<style>
+		@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+		*, *:before, *:after {margin: 0; padding: 0; box-sizing: border-box;}
+		body {background: #23282d; color: #B9B5C7; font: 14px 'Open Sans', sans-serif;}
+		a { color: rgba(255,255,255,0.6); text-transform: uppercase; text-decoration: none; line-height: 42px; }
+
+		h1 {padding: 20px 0; font-weight: 500; text-align: center; color:#fff;}
+
+		.main {margin: 0 auto; min-width: 320px; max-width:90%;}
+		.main img{
+			
+			max-width:100%;
+			height:auto;
+		}
+		.main h2{
+			margin-top:15px;
+			margin-bottom:5px;
+		}
+		.content {background: #fff; color: #373737;}
+		.content > div {display: none; padding: 20px 25px 5px;}
+
+		input {display: none;}
+		label {display: inline-block; padding: 15px 25px; font-weight: 600; text-align: center; color:#fff;}
+		label:hover {color: #fff; cursor: pointer;}
+		input:checked + label {background: #d54e21; color: #fff;}
+
+		#tab1:checked ~ .content #content1,
+		#tab2:checked ~ .content #content2,
+		#tab3:checked ~ .content #content3,
+		#tab4:checked ~ .content #content4,
+		#tab5:checked ~ .content #content5,
+		#tab6:checked ~ .content #content6 {
+		  display: block;
+		}
+
+		@media screen and (max-width: 400px) { label {padding: 15px 10px;} }
+		</style>
+</head>
+
+<body>
+
+		<h1>Woo Quote Calculator & Order : Documentation</h1>
+
+		<div class="main">
+  
+		  <input id="tab1" type="radio" name="tabs" checked>
+		  <label for="tab1">Woo Quotes</label>
+	
+		  <input id="tab2" type="radio" name="tabs">
+		  <label for="tab2">Add New Quote</label>
+	
+		  <input id="tab3" type="radio" name="tabs">
+		  <label for="tab3">Export</label>
+	
+		  <input id="tab4" type="radio" name="tabs">
+		  <label for="tab4">Import</label>
+          
+          <input id="tab5" type="radio" name="tabs">
+		  <label for="tab5">Frontend</label>
+          
+           <input id="tab6" type="radio" name="tabs">
+		  <label for="tab6">Developers</label>
+	
+		  <div class="content">  
+			  <div id="content1">
+              <h2 align="center">This section shows all available qoutes.</h2>
+			  <img src="images/woo_quotes.png" width="1483" height="274" />
+              <h2>1.1 Quote Name</h2>
+              This is the name/title of a particular quote. When creating a new quote , this field was a required field. This field identifies quotes to user.
+              <h2>1.2 Shortcode</h2>
+              To insert any quote form into a post/page/widget just write the shortcode in it. Quote form can also be inserted in sidebar using the same shortcode.  for example<br />
+               <em> <strong>[wooqco id="1"]</strong></em> 
+                <h2>1.3 Action:Edit</h2> 
+                Click here to edit a quote. Edit screen is exactly similar of creating a new quote<br />
+                <br />                <img src="images/edit.png" width="1488" height="863" />
+				<h2>1.4 Action:Export</h2>
+                Click here to export a particular quote form. You will be redirected to the export tab (3.1) with the download link of your exported CSV file. You can import this quote to any installation of this plugin using the import tab (4.1)<br /><br />
+                <img src="images/export_single.png" width="380" height="112" />
+<h2>1.5 Action:Delete</h2>
+Click to delete that quote. A confirmation for delete is required to perform this. Click yes to ensure you want to delete this quote.<br /><br />
+<img src="images/delete_quote.png" width="571" height="113" />
+<h2>1.6 Navigation</h2>
+you will see a simple navigation menu to see rest of quotes once you have more than 12 quotes. <br /><br />
+              </div>
+	
+    
+    
+    
+			  <div id="content2">
+				<h2 align="center">This section creates new quote form.</h2><br />
+              <img src="images/fields.png" width="1129" height="498" />
+              <h2>2.1 Field Box</h2>
+              A fieldbox contains two fields. Label and options. See below image to see both at frontend<br /><br />
+              <img  src="images/frontend-1.png" width="742" height="525" />
+              <h2>2.1(A) Label</h2>Label is the title of each field.
+              <h2>2.1(B) Options</h2>These are are the options.User will select the value from here. These can be text or number. To use these values in the calculation formula these must be numbers or must store & return a number value. It is possible to store a hidden value in each of the options within parenthesis(), which can be used at formula. For example <strong>"Demo Option (100 )"</strong> will show the option as <strong>"Demo Option"</strong>. But when user select this option the value <strong>"100"</strong> will be returned, which can be used in the calculation formula as a variable.<br /><br />
+              <img src="images/fieldbox.png" width="372" height="351" /> 
+              <h2>2.2 Products</h2>
+             These you will see all woocommerce products listed. You can select the products you want to show as result in this quote. Number of products can be calculated using formula (2.3) , base on user input fields (2.1) <br /><br />
+             <img src="images/product-1.png" width="1497" height="240" /> <br />
+             <img src="images/product-front.png" width="905" height="567" /><br /><br />
+			<h2>Set Product Order</h2>
+            You can simply drag and drop selected product order. Products order selected at the backend will be saved. At frontend quote products will be showed following that order.<br /><br />
+            <img src="images/product-order.png" width="1499" height="242" /> <br /><br />
+
+            <h2>2.3 Formula</h2>
+            After saving a quote , you can use this section to save your formula for each product result. As stated above, you can use user selected value as variable and create formula to calculate number of product to show for each products. At front end the variable name will be replaced with the user selected values. <br /><br />
+            <img src="images/formula.png" width="1500" height="669" /> 
+            <h2>2.4 Save</h2>
+            Click Save button to save/update a quote. You cannot leave a quote without any product selected or without field.  <br /><br />
+            </div>
+	
+			  <div id="content3">
+				
+                <h2 align="center">3.1 Export All Quotes at One Click</h2><br />
+              <img src="images/export.png" width="1495" height="222" />
+              <h2>Export a Single Quote</h2>
+              See 1.4 for this.<br /><br />
+
+               </div>
+	
+			  <div id="content4">
+				<h2 align="center">4.1 Import Quotes</h2>
+                Choose the CSV file you want to import ( Export see 3.1 ) at file select box .           
+ You will see a confirmation message after the import is complete. <br /><br />
+ <img src="images/import-1.png" width="963" height="165" /> <br /><br />
+
+ Imported quotes can be seen at the Woo Quotes 1.1 section from menu.<br />
+ <img src="images/woo_quotes.png" width="1483" height="274" />  <br /><br />
+		  </div>
+          <div id="content5">
+          <h2 align="center">Quote at Frontend</h2>
+          <img src="images/frontend-2.png" width="742" height="525" />
+          <img src="images/frontend-3.png" width="742" height="525" /><br />
+<br />
+You will be automatically redirected to shopping cart after clicking <strong>"add to cart"</strong> button
+<br />
+
+          <img src="images/frontend-4.png" width="742" height="525" /> <br /><br />
+           </div>
+          <div id="content6">
+          <h2>Php API for Developers </h2>
+          <code><strong>WooQcoModel::WooQcoGetValue($property, $quoteID)</strong></code>  [ Retrieve any property of a particular quote providing its id ]
+          <h2>Explanation</h2>
+          <strong>WooQcoModel</strong> - > The class name containing the core functions of the plugin.<br />
+          <strong>WooQcoGetValue</strong> - > The function name which retrieve plugin data from database. It has following two argument and returns an array of data. <br />
+          &nbsp;&nbsp;&nbsp;&nbsp; <strong>$property</strong> -> Such as "options","labels","products","formula"<br />
+          &nbsp;&nbsp;&nbsp;&nbsp; <strong>$quoteID</strong> ->  Such as "1","l0","6" , found inside shortcode<br /><br />
+          <strong>Example :</strong><br /><br />
+          <code><strong>WooQcoModel::WooQcoGetValue('labels', 1)</strong></code> Get labels of the quote which has id = 1<br />
+          <code><strong>WooQcoModel::WooQcoGetValue('options', 3)</strong></code>  Get options of the quote which has id = 3<br />
+          <code><strong>WooQcoModel::WooQcoGetValue('products', 1)</strong></code> Get products of the quote which has id = 1<br />
+          <code><strong>WooQcoModel::WooQcoGetValue('formula', 82)</strong></code> Get formula of the quote which has id = 82<br /><br />
+
+          <strong>Working Example :</strong><br /><br />
+          <code>
+          /******Show all labels of Quote have id = 1**********/<br />
+
+          $labels = WooQcoModel::WooQcoGetValue('labels', 1);<br /><br />
+
+          foreach($labels as label){<br />
+         	 echo $label ."<br />";<br />
+          }<br /><br />
+          /******Show all options of Quote have id = 1**********/<br /><br />
+
+          $options = WooQcoModel::WooQcoGetValue('options', 1); <br />
+          for($optionNumber = 1; $optionNumber<=count($options); $optionNumber++){ <br />
+          	 echo "<strong>Values of Option $optionNumber</strong>";<br />
+         	 $optionArray = explode("\n", $options['options'.$optionNumber]); <br />
+          	 for($option=0;$option<count($optionsArray);$option++){ <br />
+          		echo $optionsArray[$option]."<br />"; <br />
+         	 } <br />
+             echo "<br />"; <br />
+          } <br />
+          </code>
+          <br /><br />
+
+          </div>
+	
+		</div><!--End of main content div -->
+</body>
+</html>

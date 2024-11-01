@@ -1,0 +1,97 @@
+,"Demo : Basement Waterproofing Product Calculator","a:4:{s:6:""label1"";s:18:""Basement Wall Type"";s:6:""label2"";s:6:""Length"";s:6:""label3"";s:6:""Width "";s:6:""label4"";s:7:""Height "";}","a:4:{s:8:""options1"";s:90:""Poured Concrete (120)
+Concrete Block (80)
+Brick and Mortor (120)
+Stone and Mortar (120)"";s:8:""options2"";s:57:""10
+100
+110
+120
+130
+140
+150
+160
+170
+180
+190
+200"";s:8:""options3"";s:59:""10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+130
+140"";s:8:""options4"";s:69:""1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20"";}","a:3:{i:0;s:2:""10"";i:1;s:2:""12"";i:2;s:1:""8"";}","a:3:{i:10;s:16:""(f1+f2+f3+f4)/20"";i:12;s:16:""(f1+f2+f3+f4)/16"";i:8;s:16:""(f1+f2+f3+f4)/12"";}","May 20, 2016, 4:13 am"
+,"Demo : Swimming Pool Leak Repair Calculator","a:6:{s:6:""label1"";s:10:""Pool Shape"";s:6:""label2"";s:14:""Pool Wall Type"";s:6:""label3"";s:11:""Pool Length"";s:6:""label4"";s:10:""Pool Width"";s:6:""label5"";s:10:""Pool Depth"";s:6:""label6"";s:12:""Crack Length"";}","a:6:{s:8:""options1"";s:62:""Rectangle ( 2.2)
+Square (2.2)
+Free Form (2.2)
+Lazy L  (2.2)"";s:8:""options2"";s:124:""Gunnite (120)
+Poured Concrete  (80)
+Concrete BlockSteel Walls   (120)
+Fiberglass/Concrete  (120)
+Fiberglass only (120)
+"";s:8:""options3"";s:39:""10
+20
+30
+40
+50
+60
+70
+80
+90
+100"";s:8:""options4"";s:39:""10
+20
+30
+40
+50
+60
+70
+80
+90
+100"";s:8:""options5"";s:104:""1(1)
+2(1)
+3(1)
+4(1)
+5(1)
+6(1)
+7(1)
+8(1)
+9(1)
+10(1)
+11(1.1)
+12(1.2)
+13(1.3)
+14(1.4)
+15(1.5)"";s:8:""options6"";s:39:""10
+20
+30
+40
+50
+60
+70
+80
+90
+100"";}","a:3:{i:0;s:1:""8"";i:1;s:2:""12"";i:2;s:2:""10"";}","a:3:{i:12;s:19:""(f1+f3+f4+f5+f6)/12"";i:10;s:19:""(f1+f3+f4+f5+f6)/10"";i:8;s:19:""(f1+f3+f4+f5+f6)/15"";}","May 20, 2016, 4:42 am"

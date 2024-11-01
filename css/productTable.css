@@ -1,0 +1,117 @@
+@import url('common.css');
+
+  table {
+	  	font-family:'Open Sans';
+    border: 1px solid #ccc;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  table tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  table th, table td {
+    padding: 4px;
+    text-align: center;
+	font-size:14px;
+  }
+ .productTable td {
+	  cursor:move;
+  }
+  table td a{
+	  text-decoration:none;
+  }
+table td img{
+	max-width:18px;
+	max-height:18px;
+	border:none;
+	vertical-align:middle;
+}
+  table th {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+#WooQcoProducts input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.1); /* IE */
+  -moz-transform: scale(1.1); /* FF */
+  -webkit-transform: scale(1.1); /* Safari and Chrome */
+  -o-transform: scale(1.1); /* Opera */
+}
+.smallTable td{
+	font-size:13px !important;
+	padding:5px !important;
+}
+.smallTable td select{
+	width:150px !important;
+	height:24px !important;
+	margin:0px !important;
+	font-size:13px !important;
+}
+#WooQcoProducts input[type="text"]{
+	width:350px;
+	height:40px;
+	font-family:"Courier New", Courier, monospace;
+	font-size:17px;
+	font-weight:bold;
+}
+.shortcodeInput{
+	max-width:200px;
+	font-size:1.1em !important;
+	text-align:center
+}
+  @media screen and (max-width: 600px) {
+#WooQcoProducts input[type="text"]{
+	width:250px;
+	height:30px;
+	font-family:"Courier New", Courier, monospace;
+	font-size:15px;
+	font-weight:bold;
+}
+    table {
+      border: 0;
+    }
+
+    table thead {
+      display: none;
+    }
+
+    table tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #ddd;
+    }
+
+    table td {
+      display: block;
+      text-align: right;
+      font-size: 14px;
+      border-bottom: 1px dotted #ccc;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+
+    table td:before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+	#WooQcoProducts input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1); /* IE */
+  -moz-transform: scale(1); /* FF */
+  -webkit-transform: scale(1); /* Safari and Chrome */
+  -o-transform: scale(1); /* Opera */
+}
+  }
